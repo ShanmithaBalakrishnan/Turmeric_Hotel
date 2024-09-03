@@ -2130,6 +2130,7 @@ footer .move_content {
   position: relative;
   z-index: 4;
   padding-bottom: 120px;
+  margin-left: -50px;
 }
 @media (max-width: 767px) {
   footer .move_content {
@@ -2246,7 +2247,11 @@ footer .copy {
 }
 
 .footer_links {
+  display: flex;
+  gap: 100px;
   margin-bottom: 25px;
+  margin-left: -30px;
+  width: max-content;
 }
 .footer_links ul {
   line-height: 1.9;
