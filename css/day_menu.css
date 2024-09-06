@@ -147,7 +147,7 @@ Main Components
   }
 }
 .half-container {
-  background: #fff url(../img/daymenu/pattern_menu.jpg) no-repeat center center;
+  background: #fff url(../img/restaurant/pattern_menu.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -193,10 +193,8 @@ Main Components
 }
 
 .menu-section:nth-of-type(7) .half-container:first-of-type {
-  background-image: url("../images/qrcode.webp");
-  background-size: 50% 50%; 
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-image: url("../images/tablebooking.webp");
+ 
   
 }
 
@@ -237,10 +235,8 @@ Main Components
 }
 
 .qr-code:nth-of-type(9) .half-container:first-of-type {
-  background-image: url("../images/qrcode.webp");
-  background-size: 50% 50%; /* Adjust size as needed */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Adjust position if needed */
+  background-image: url("../images/tablebooking.webp");
+  
   
 }
 
