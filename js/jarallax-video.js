@@ -984,7 +984,7 @@
           } // insert video tag
 
 
-          self.image.$container.appendChild(video); // remove parent video element (created by VideoWorker)
+          self.image.$container.appendChild(video);
 
           $parent.parentNode.removeChild($parent); // call onVideoInsert event
 
