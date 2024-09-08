@@ -66,7 +66,8 @@
                 </div>
             </div>
         </div><!-- /container -->
-    </header><!-- /Header -->
+    </header>
+    <!-- /Header -->
 
     <!--navbar-->
     <div class="nav_panel">
@@ -122,38 +123,6 @@
                 <div class="container">
                     <small class="slide-animated one">Luxury Hotel Experience</small>
                     <h3 class="slide-animated two">Erode’s Premier Choice for <br>Unforgettable Stays</h3>
-                    <!-- <div class="row justify-content-center slide-animated three">
-                        <div class="col-xl-10">
-                            <div class="row g-0 booking_form">
-                                <div class="col-lg-4 ">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" name="dates" id="dates"
-                                            placeholder="Check in / Check out" readonly="readonly">
-                                        <i class="bi bi-calendar2"></i>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 pe-lg-0 pe-sm-1">
-                                    <div class="qty-buttons">
-                                        <label>Adults</label>
-                                        <input type="button" value="+" class="qtyplus" name="adults">
-                                        <input type="text" name="adults" id="adults" value="" class="qty form-control">
-                                        <input type="button" value="-" class="qtyminus" name="adults">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 ps-lg-0 ps-sm-1">
-                                    <div class="qty-buttons">
-                                        <label>Childs</label>
-                                        <input type="button" value="+" class="qtyplus" name="childs">
-                                        <input type="text" name="childs" id="childs" value="" class="qty form-control">
-                                        <input type="button" value="-" class="qtyminus" name="childs">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2">
-                                    <input type="submit" class="btn_search" value="Search">
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
                 <div class="mouse_wp slide-animated four">
                     <a href="#first_section" class="btn_scrollto">
@@ -193,23 +162,6 @@
                 </div>
                 <!-- /Row -->
             </div>
-            <!-- <div class="pinned-image pinned-image--medium">
-                <div class="pinned-image__container" id="section_video">
-                    <video loop="loop" muted="muted" id="video_home">
-                        <source src="video/swimming_pool_2.mp4" type="video/mp4">
-                        <source src="video/swimming_pool_2.webm" type="video/webm">
-                        <source src="video/swimming_pool_2.ogv" type="video/ogg">
-                    </video>
-                    <div class="pinned-image__container-overlay"></div>
-                </div>
-                <div class="pinned_over_content">
-                    <div class="title white">
-                        <small data-cue="slideInUp" data-delay="200">Luxury Hotel Experience</small>
-                        <h2 data-cue="slideInUp" data-delay="300">Enjoy in a very<br> Immersive Relax</h2>
-                    </div>
-                </div>
-            </div> -->
-            <!-- /pinned content -->
         </div>
         <!-- /Pattern  -->
 
@@ -292,15 +244,6 @@
             <p class="text-end mt-2"><a href="Accomadations.html" class="btn_1 outline">View all rooms</a></p>
         </div>
         <!-- /container-->
-
-        <!-- <div class="marquee">
-            <div class="track">
-                <div class="content">&nbsp;Relax Enjoy Luxury Holiday Travel Discover Experience Relax Enjoy Luxury
-                    Holiday Travel Discover Experience Relax Enjoy Luxury Holiday Travel Discover Experience Relax Enjoy
-                    Luxury Holiday Travel Discover Experience</div>
-            </div>
-        </div> -->
-        <!-- /marquee-->
 
         <div class="bg_white">
             <div class="container margin_120_95">
@@ -706,6 +649,25 @@
     <script src="js/datepicker_inline.js"></script>
     <script src="phpmailer/validate.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            // Show the bottom header after 2 seconds (for demo purposes)
+            setTimeout(function () {
+                $('.header_bottom').addClass('show');
+            }, 2000);
+
+            // Alternatively, you can show it based on user scroll
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 500) { // Adjust the scroll trigger value as needed
+                    $('.header_bottom').addClass('show');
+                } else {
+                    $('.header_bottom').removeClass('show');
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
