@@ -3230,6 +3230,60 @@ a.box_cat_rooms:hover .background-image {
   }
 }
 
+/* Padding for both desktop and mobile */
+.owl-carousel {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+/* Desktop view - show carousel */
+@media (min-width: 768px) {
+  .owl-carousel .item {
+    width: 100%;
+  }
+}
+
+/* Mobile view (less than 768px) */
+@media (max-width: 767px) {
+  .owl-carousel {
+    display: none; /* Hide carousel on mobile */
+  }
+  .owl-carousel {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+  }  
+
+  /* Add styling for rows of images on mobile */
+  .mobile-images {
+    display: block; /* Display images in a block layout */
+    padding: 30px;
+  }
+
+  .mobile-images .item {
+    width: 100%;  /* Make each image take full width */
+    margin-bottom: 15px; /* Add some spacing between images */
+  }
+
+  .mobile-images img {
+    width: 100%; /* Ensure images take full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+}
+
+/* Desktop view (768px and up) */
+@media (min-width: 768px) {
+  .mobile-images {
+    display: none; /* Hide the mobile images in desktop view */
+  }
+
+  .owl-carousel {
+    display: block; /* Show the carousel on desktop */
+  }
+}
+
 .booking_wrapper {
   border-radius: 10px;
   background-color: #89795d;
